@@ -1,0 +1,246 @@
+/* General CSS */
+
+@font-face {
+    font-family: DSEG14Classic-Regular;
+    src: url(../css/fonts/DSEG14Classic-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../css/fonts/Roboto-Regular.ttf);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #D8D8D8;
+    height: 100%;
+}
+
+
+
+.timer-body p {
+    font-family: 'DSEG14Classic-Regular', sans-serif;
+    font-size: 100px;
+    margin: 0;
+}
+.timer-head {
+    display: flex;
+    padding: 0;
+        height: 80px;
+}
+.timer-head-left { 
+    text-align: left;
+}
+
+.timer-head-right { 
+    text-align: right;
+}
+
+.timer-head-center {
+    text-align: center;
+}
+
+.timer-head .timer-head-a {
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+}
+
+.timer-head-left-inline {
+    display: flex;
+}
+
+.timer-head-right .timer-head-left-inline {
+    float: right;
+}
+
+.timer-head-left-inline h2 {
+    margin: 0;
+    font-size: 55px;
+}
+.timer-head-left-inline i {
+    font-size: 55px;
+        margin: 0 10px;
+}
+.timer-head-center p {
+    margin: 0;
+        font-size: 55px;
+}
+.timer-body {
+    height: 160px;
+    padding: 0;
+}
+
+.timer-body-left {
+    float: left;
+        padding: 25px;
+}
+
+.timer-body-right {
+    float: right;
+        padding: 25px;
+}
+
+.timer-desc {
+    text-align: center;
+    padding: 0;
+    height: 80px;
+}
+
+.timer-footer ul {
+    list-style: none; 
+    padding: 8px 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+.timer-footer {
+    background-color: #000000;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 0;
+    height: 80px;
+}
+
+.timer-footer ul li a {
+    color: #D8D8D8;
+    font-size: 50px;
+}
+.timer-footer ul li a:hover {
+    color: #464646; 
+}
+
+.timer-inner {
+    text-align: center;
+    position: relative;
+    /* left: 100px; */
+    height: 400px;
+    width: 100%;
+    /* background-color: green; */
+}
+
+.timer-footer ul li {
+    margin: 0 19% 0 1%;
+}
+
+hr.hr-timer {
+    margin: 0;
+}
+
+.timer-desc p {
+    margin: 0;
+    font-size: 36px;
+    padding: 16px 0;
+}
+
+/*==================================================
+			 Media Queries         
+==================================================*/
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) {
+    
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .timer-body-left {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .timer-body-right {
+        float: none;
+    }
+    .timer-body {
+        height: auto;
+        padding: 20px;
+    }
+    .timer-inner { 
+        position: inherit; 
+        height: auto; 
+    }
+    .timer-footer ul li {
+        margin: 0 8%;
+    }
+}
+
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+
+@media (max-width: 767px) {
+    .timer-head { 
+        padding: 10px 10px;
+    }
+    .timer-head-left-inline h2, .timer-head-center p {
+        font-size: 20px;
+    }
+    .timer-body p {
+        font-size: 60px;
+    }
+    .timer-desc p { 
+        font-size: 25px;
+        padding: 20px;
+    }
+    .timer-head-left-inline i {
+        font-size: 20px; 
+    }
+    .timer-body-left {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .timer-body-right {
+        float: none;
+    }
+    .timer-body {
+        height: auto;
+        padding: 20px 10px;
+    }
+    .timer-inner { 
+        position: inherit; 
+        height: auto; 
+    }
+    .timer-footer ul li {
+        margin: 0 7%;
+    }
+    .timer-footer ul li a {
+        color: #D8D8D8;
+        font-size: 25px;
+    }
+    .timer-head .timer-head-a { 
+        padding: 0;
+    }
+    .timer-footer ul { 
+        padding: 25px 0; 
+    }
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller devices) */
+
+@media (max-width: 480px) {
+    
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller devices) */
+
+@media (max-width: 320px) {
+    
+    .timer-footer ul li a { 
+    font-size: 20px;
+}
+}
